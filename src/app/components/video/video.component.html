@@ -1,0 +1,57 @@
+
+<div class="container">
+<div class="row">
+    
+    <div class="col-sm-9">
+        <h3>Product Details</h3>
+        <div *ngIf="!hideNewVideo">
+            <h2>New Product</h2>
+            <form #form="ngForm" (ngSubmit) ="onSubmit(form.value)"class="well">
+                <div class="form-group">
+                    <label for="modelNo"> Model Number </label>
+                    <input type="text" name="ModelNumber" id="modelNo" class="form-control" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name </label>
+                    <input type="text" name="Name" id="name" class="form-control" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="os"> OS </label>
+                    <input type="text" name="OS" id="os" class="form-control" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="ram"> RAM </label>
+                    <input type="text" name="RAM"  id="ram"  class="form-control" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="camera"> Camera </label>
+                    <input type="text" name="Camera" id="camera" class="form-control" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="special_features"> Special Features </label>
+                    <input type="text" name="Special_features"  id="special_features" class="form-control" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="price"> Price </label>
+                    <input type="text" name="Price" id="price"class="form-control" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="photoPath"> Photo Path  </label>
+                    <input type="text" name="photoPath"  id="photoPath" class="form-control" ngModel>
+                </div> 
+                <div class="form-group">
+                    <label for="video"> Video </label>
+                    <input type="text" name="video" id="video" class="form-control" ngModel>
+                </div>      
+                <button  type="submit" class="btn btn-success">Save</button>     
+            </form>
+        </div>
+        <app-video-details *ngIf="selectedProd && hideNewVideo" [productDetails]="selectedProd"></app-video-details>
+    </div>
+    <div class="col-sm-3">
+        <button (click)="loadVideo()"style="margin-bottom:2px" type="button" class="btn btn-success btn-block">+ New Product</button>
+        <app-video-lists (ProductInFocus)="onSelectedProd($event)"[productInput]="products"></app-video-lists>
+    </div>
+</div>
+
+</div>

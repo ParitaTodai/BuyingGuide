@@ -1,0 +1,129 @@
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <form> 
+        <div *ngIf="editTitle" class="form-group">
+          <input type="input"(focus)="focusOut()" class="form-control" name="Name" required placeholder="Enter Title" 
+          [(ngModel)]="prod.Name"  >
+        </div>
+        <h3 *ngIf="!editTitle"  (click)="onClickTitle()" class="panel-title">{{prod.Name}}</h3>
+      </form>
+    </div>
+    <div class="panel-body">
+        <div class="col-xs-10">
+            <div class="row" class="vertical-align">
+                <div class="col-xs-4" >
+                    <img  (click)="openModal();currentSlide(1)" class="imgClass hover-shadow cursor "
+                     [src]="prod.photoPath[0]" >
+                    <br>
+                    <br>
+                 
+             <button class="btn btn-primary align" (click)="features(prod.video)" >Check Features  &#10095;</button>
+             <div *ngIf="test">
+             <iframe  [src]="prod.video | safe" width="100%" height="200" ></iframe></div>
+                </div>
+                <div class="col-xs-8" >
+                    <div class="row" >
+                    <div class="col-xs-6"><h4>Model Number</h4></div>
+                    <div class="col-xs-6">
+                        <span>: {{prod.ModelNumber}}</span> 
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6"><h4>OS</h4></div>
+                    <div class="col-xs-6">
+                        <span>: {{prod.OS}}</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6"><h4>RAM</h4></div>
+                    <div class="col-xs-6">
+                        <span> : {{prod.RAM}}</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6"><h4>Camera</h4></div>
+                    <div class="col-xs-6">
+                        <span> : {{prod.Camera}}</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6"><h4>Special Features</h4> </div>
+                    <div class="col-xs-6">
+                        <li *ngFor="let p of prod.Special_features">
+                            <span> {{p}}</span>
+                          </li> 
+                    </div>
+                </div>
+
+                
+                <div class="row">
+                    <div class="col-xs-6"><h4>Price</h4> </div>
+                    <div class="col-xs-6">
+                        <span>: {{prod.Price | currency: 'INR' : 'symbol' : '2.2-3'}}</span>
+                    </div>
+                </div>
+              <p></p>
+              
+<button class="btn btn-primary" (click)="editItem()"><i class="fa fa-edit"></i>  Edit Product</button>
+<button class="btn btn-primary" (click)="removeItem('name')"><i class="fa fa-trash"></i>  Delete Product</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" (click)="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img class="imgTextM" [src]="prod.photoPath[0]" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img class="imgTextM" [src]="prod.photoPath[1]" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img class="imgTextM" [src]="prod.photoPath[2]" >
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img class="imgTextM" [src]="prod.photoPath[3]" >
+    </div>
+    
+    <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+    <a class="next" (click)="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+   
+   
+
+    <div class="column">     
+      <img class="demo cursor" [src]="prod.photoPath[0]"  (click)="currentSlide(1)" alt="View 1">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" [src]="prod.photoPath[1]"  (click)="currentSlide(2)" alt="view 2">
+    </div>
+    <div class="column">
+      <img class="demo cursor"[src]="prod.photoPath[2]"  (click)="currentSlide(3)" alt="View 3 ">
+    </div>
+    <div class="column">
+      <img class=" demo cursor" [src]="prod.photoPath[3]" (click)="currentSlide(4)" alt="View 4">
+    </div>
+</div>    
+</div>
+

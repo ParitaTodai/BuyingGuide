@@ -1,0 +1,85 @@
+[{
+  "_id": {
+    "$oid": "5f52751b5f6593329078d71b"
+  },
+  "ModelNumber": "prod101",
+  "Name": "OnePlus_8_Pro",
+  "OS": "Android",
+  "RAM": "8GB",
+  "Camera": "48MP+8MP+48MP+5MP",
+  "Special_features": [
+    "Dual SIM",
+    "Accelerometer",
+    "Electronic compass",
+    "In-display fingerprint sensor",
+    "Ambient light sensor",
+    "Gyroscope",
+    "Sensor core",
+    "GPS",
+    "Proximity sensor"
+  ],
+  "Price": 54999,
+  "photoPath": [
+    "../assets/imgs/OnePlus_8_Pro_1.jpg ",
+    "../assets/imgs/OnePlus_8_Pro_2.jpg",
+    "../assets/imgs/OnePlus_8_Pro_3.jpg",
+    "../assets/imgs/OnePlus_8_Pro_4.jpg"
+  ],
+  "video": "https://www.gsmarena.com/oneplus_8_pro-9919.php"
+},{
+  "_id": {
+    "$oid": "5f528358ae7e6c23e0701778"
+  },
+  "ModelNumber": "prod101",
+  "Name": "OnePlus_8_Pro",
+  "OS": "Android",
+  "RAM": "8GB",
+  "Camera": "48MP+8MP+48MP+5MP",
+  "Special_features": [
+    "Dual SIM",
+    "Accelerometer",
+    "Electronic compass",
+    "In-display fingerprint sensor",
+    "Ambient light sensor",
+    "Gyroscope",
+    "Sensor core",
+    "GPS",
+    "Proximity sensor"
+  ],
+  "Price": 54999,
+  "photoPath": [
+    "../assets/imgs/OnePlus_8_Pro_1.jpg ",
+    "../assets/imgs/OnePlus_8_Pro_2.jpg",
+    "../assets/imgs/OnePlus_8_Pro_3.jpg",
+    "../assets/imgs/OnePlus_8_Pro_4.jpg"
+  ],
+  "video": "https://www.gsmarena.com/oneplus_8_pro-9919.php"
+},{
+  "_id": {
+    "$oid": "5f52835bae7e6c23e0701779"
+  },
+  "ModelNumber": "prod101",
+  "Name": "OnePlus_8_Pro",
+  "OS": "Android",
+  "RAM": "8GB",
+  "Camera": "48MP+8MP+48MP+5MP",
+  "Special_features": [
+    "Dual SIM",
+    "Accelerometer",
+    "Electronic compass",
+    "In-display fingerprint sensor",
+    "Ambient light sensor",
+    "Gyroscope",
+    "Sensor core",
+    "GPS",
+    "Proximity sensor"
+  ],
+  "Price": 54999,
+  "photoPath": [
+    "../assets/imgs/OnePlus_8_Pro_1.jpg ",
+    "../assets/imgs/OnePlus_8_Pro_2.jpg",
+    "../assets/imgs/OnePlus_8_Pro_3.jpg",
+    "../assets/imgs/OnePlus_8_Pro_4.jpg"
+  ],
+  "video": "https://www.gsmarena.com/oneplus_8_pro-9919.php"
+}]
