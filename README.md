@@ -1,6 +1,5 @@
 # BuyingInfoGuide
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2.
+Thisproject works on : MEAN Stack, with angular verison 4.This provides information on mobile buying guidance, if we click on the image, we see different zoomed images, we can also check te features for this. Run ng serve to start, and node server.js for starting client.
 
 ## Development server
 
